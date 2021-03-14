@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="login grid">
+        <h1>Login </h1>
+        <div class="form">
+            <input type="text"      id="name" name="name" autocomplete="off" placeholder="Name.. " required />
+            <input type="password"  id="password" name="pass" autocomplete="off" placeholder="Password" required />
+            <button id="submit"><a href="index.html">Login</a></button>
+            <!-- <label for="name" class="label-name"></label> -->
+            <!-- <span class="content-name">Name</span> -->
+        </div>
+    </div>
+    <script>
+        const submit=document.getElementById("submit");
+        submit.addEventListener("click", ()=> {
+            const pass = document.getElementById('password').value;
+            const name = document.getElementById('name').value;
+            sessionStorage.setItem('name', name); 
+            // alert(sessionStorage.getItem('name'));
+            localStorage.setItem('name', name);
+             
+        });
+    </script>
+</body>
+
+</html>

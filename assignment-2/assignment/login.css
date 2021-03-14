@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #0a0909;
+    font-weight: 700;
+}
+.login{
+    height: 60vh;
+    width: 60vh;
+    padding:0 2em 0.3em;
+    background-color: #0a0909;
+    border: 2px solid #5fa8d3;
+    color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,30%);
+}
+.login h1{
+    padding: 0 2em .5em;
+    color: #5fa8d3;
+    font-size: 4rem;
+}
+.form{
+    width: 50%;
+    position: relative;
+    height: 50%;
+}
+.grid{
+    display: grid;
+    /* place-items: center; */
+    place-content: center;
+}
+.form input{
+    width: 194%;
+    padding: 1em;
+    margin: 1em 0;
+    color: #5fa8d3;
+    border-radius: 1em;
+    font-size: 1.2em;
+    border: none;
+    outline: none; 
+}
+button{
+    padding: .5em 1em;
+    margin: 1em 9rem;
+    font-size: 1.4em;
+    border: none;
+   background-color: #5fa8d3;
+  
+}
+.form input:focus ,button:focus,button:hover,
+.form input:valid 
+{
+    box-shadow: 0 0 3em  0 dodgerblue;
+}
